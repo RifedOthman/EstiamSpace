@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ScreenWrapper from '../components/ScreenWrapper'
 import Loading from '../components/Loading';
 import { supabase } from '../lib/supabase';
-
+import Loading from '../components/Loading';
 const StartPage = () => {
     const [session, setSession] = useState(null);
 
@@ -25,9 +25,9 @@ const StartPage = () => {
 
       if(!session) return null;
     return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Loading />
-    </View>
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+        <Loading />
+      </View>
   )
 }
 
