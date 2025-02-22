@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import ScreenWrapper from '../components/ScreenWrapper'
 import Loading from '../components/Loading';
 import { supabase } from '../lib/supabase';
-import Loading from '../components/Loading';
+// import Loading from '../components/Loading';
 const StartPage = () => {
     const [session, setSession] = useState(null);
 
