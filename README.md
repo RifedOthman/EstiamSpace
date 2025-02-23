@@ -63,7 +63,8 @@ eas build:configure
 eas build -p android --profile production
 ```
 ## 📸 DEMO 
-
+![alt text](<GIF1.gif>)
+![alt text](<2.gif>)
 ## Team
 
 - **Rifed Othman**
