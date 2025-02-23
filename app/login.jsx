@@ -39,7 +39,6 @@ const Login = () => {
     if (error) Alert.alert('Login', error.message)
     setLoading(false)
 
-    // setLoading(true);
 }
 
   return (

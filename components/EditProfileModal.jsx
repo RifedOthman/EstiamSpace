@@ -4,8 +4,14 @@ import { hp, wp } from '../helpers/common';
 import { Feather } from '@expo/vector-icons';
 import { theme } from '../constants/theme';
 
+import { useAuth } from '../contexts/AuthContext';
+import { Feather } from '@expo/vector-icons';
+import { theme } from '../constants/theme';
+
 const EditProfileModal = ({open, toggle}) => {
-    return (
+    const {user} = useAuth();
+    let imageSource = user.image? {uri: user.image}: require('../assets/images/defaultUser.png');
+  return (
     <View>
       <Modal
         animationType="slide"

@@ -20,7 +20,6 @@ const WelcomePage = () => {
         {/* title */}
         <View style={{gap: 20}}>
             <Text style={styles.title}>Estiamien's zone</Text>
-          
         </View>
 
         <View style={styles.footer}>

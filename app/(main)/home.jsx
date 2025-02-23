@@ -23,14 +23,7 @@ const HomeScreen = () => {
     const [hasMore, setHasMore] = useState(true);
     const [notificationCount, setNotificationCount] = useState(0);
 
-    // const onLogout = async () => {
-    //     setAuth(null);
-    //     const {error} = await supabase.auth.signOut();
-    //     if (error) {
-    //       Alert.alert("Error Signing Out User", error.message);
-    //     }
-    // }
-
+ 
     const handlePostEvent = async (payload)=>{
       console.log('got post event: ', payload);
       if(payload.eventType == 'INSERT' && payload?.new?.id){
@@ -117,7 +110,7 @@ const HomeScreen = () => {
         {/* header */}
         <View style={styles.header}>
           <Pressable>
-            <Text style={styles.title}>LinkUp</Text>
+            <Text style={styles.title}>Estiam Space</Text>
           </Pressable>
           <View style={styles.icons}>
             <Pressable onPress={()=> {

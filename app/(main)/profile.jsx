@@ -63,8 +63,7 @@ const Profile = () => {
 
   return (
     <ScreenWrapper bg="white">
-      {/* first create UserHeader and use it here, then move it to header comp when implementing user posts */}
-      {/* posts */}
+      
       <FlatList
         data={posts}
         ListHeaderComponent={<UserHeader user={user} handleLogout={handleLogout} router={router} />}

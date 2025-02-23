@@ -6,9 +6,12 @@ import { theme } from '../constants/theme';
 import { hp } from '../helpers/common';
 
 const NotificationItem = ({router, item}) => {
-   
+    const createdAt = moment(item?.created_at).format('MMM D');
+
     const handleClick = ()=>{
-        //
+        let {postId, commentId} = JSON.parse(item.data);
+        router.push({pathname: 'postDetails', params: {postId, commentId}})
+
     }
   return (
     <TouchableOpacity style={styles.container} onPress={handleClick}>
