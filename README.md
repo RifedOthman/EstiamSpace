@@ -46,7 +46,7 @@ Ce projet est une application mobile, développée avec React Native (JavaScript
 
 ```bash
 git clone https://github.com/RifedOthman/EstiamSpace
-cd ESTIAM 
+cd EstiamSpace-main 
 npm install
 ```
 
