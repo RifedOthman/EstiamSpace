@@ -37,11 +37,8 @@ export const getFilePath = (folderName, isImage=true)=>{
 }
 
 export const getUserImageSrc = (imagePath)=>{
-    if(imagePath){
+    if(imagePath)
         return getSupabaseFileUrl(imagePath);
-    }else{
-        return require('../assets/images/defaultUser.png');
-    }
 }
 
 export const getSupabaseFileUrl = filePath=>{
