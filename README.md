@@ -56,15 +56,20 @@ Lancez l'application en mode développement :
 npx expo start
 ```
 ## APK signé
+1 - build APK version
 ```sh
 npm install -g eas-cli 
 eas login
 eas build:configure
 eas build -p android --profile production
 ```
+2- Telecharger L [APK](https://expo.dev/artifacts/eas/khtHjPeYUyXpEz4CGUAjn2.apk) **
+
+
 ## 📸 DEMO 
 <img src="GIF1.gif" width="250px" style="margin-right: 20px;">
 <img src="2.gif" width="250px">
+
 ## Team
 
 - **Rifed Othman**
